@@ -84,6 +84,18 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        // Configuración para alineación de 16 KB (Android 15+)
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+        }
+    }
+
+    // Habilitar soporte de 16 KB page size
+    packaging {
+        jniLibs {
+            useLegacyPackaging = false
+        }
     }
      
     signingConfigs {
