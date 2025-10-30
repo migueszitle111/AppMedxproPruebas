@@ -1,0 +1,125 @@
+import React from 'react';
+import { Image, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import Reanimated, {
+  useSharedValue,
+  useAnimatedStyle,
+  useAnimatedGestureHandler,
+  runOnJS,
+} from 'react-native-reanimated';
+import { PanGestureHandler } from 'react-native-gesture-handler';
+import { Figura } from '../navigation/types';
+
+interface Props extends Pick<Figura, 'id' | 'tipo' | 'uri'> {
+  posicionInicial: { x: number; y: number };
+  onEliminar: (id: string) => void;
+  onActualizarPosicion: (id: string, x: number, y: number) => void;
+  limitesContenedor: { width: number; height: number };
+  ocultarBoton?: boolean;
+  tamaño?: number;
+}
+
+const FiguraMovible: React.FC<Props> = ({
+  id,
+  tipo,
+  uri,
+  posicionInicial,
+  onEliminar,
+  onActualizarPosicion,
+  limitesContenedor,
+  ocultarBoton,
+  tamaño = 55,
+}) => {
+  const translateX = useSharedValue(posicionInicial.x);
+  const translateY = useSharedValue(posicionInicial.y);
+  const tamañoCirculo = 55;
+  const tamañoCuadro = tipo === 'square' && tamaño ? tamaño : 55;
+  const estiloImagen = {
+    width: tipo === 'circle' ? tamañoCirculo : tamañoCuadro,
+    height: tipo === 'circle' ? tamañoCirculo : tamañoCuadro,
+    borderRadius: tipo === 'circle' ? tamañoCirculo / 2 : 4,
+    borderWidth: 1.2,
+    borderColor: '#999999',
+  };
+
+  const gestureHandler = useAnimatedGestureHandler({
+    onStart: (_, ctx: any) => {
+      ctx.startX = translateX.value;
+      ctx.startY = translateY.value;
+    },
+    onActive: (event, ctx: any) => {
+      // Calcular el tamaño de la figura
+      const figuraSize = tipo === 'circle' ? tamañoCirculo : tamañoCuadro;
+
+      let newX = ctx.startX + event.translationX;
+      let newY = ctx.startY + event.translationY;
+
+      // Limitar dentro del contenedor
+      newX = Math.max(-180, Math.min(newX, limitesContenedor.width - figuraSize));
+      newY = Math.max(0, Math.min(newY, limitesContenedor.height - figuraSize));
+
+      translateX.value = newX;
+      translateY.value = newY;
+    },
+    onEnd: () => {
+      runOnJS(onActualizarPosicion)(id, translateX.value, translateY.value);
+    },
+  });
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    transform: [
+      { translateX: translateX.value },
+      { translateY: translateY.value },
+    ],
+  }));
+
+  return (
+    <PanGestureHandler onGestureEvent={gestureHandler}>
+      <Reanimated.View style={[styles.figuraContenedor, animatedStyle]}>
+        <Image
+          source={{ uri }}
+          style={estiloImagen}
+        />
+        {!ocultarBoton && (
+        <TouchableOpacity style={styles.botonEliminar} onPress={() => onEliminar(id)}>
+          <Text style={{ color: 'white' }}>✕</Text>
+        </TouchableOpacity>
+        )}
+      </Reanimated.View>
+    </PanGestureHandler>
+  );
+};
+
+export default FiguraMovible;
+
+const styles = StyleSheet.create({
+  figuraContenedor: {
+    position: 'absolute',
+    zIndex: 20,
+  },
+  imagenCirculo: {
+    width:55,
+    height: 55,
+    borderRadius: 40,
+    borderWidth: 1.2,
+    //borderColor: 'transparent',
+    borderColor: '#999999',
+  },
+  imagenCuadro: {
+    width: 55,
+    height: 55,
+    borderWidth: 1.2,
+    //borderColor: 'transparent',
+    borderColor: '#999999',
+  },
+  botonEliminar: {
+    position: 'absolute',
+    top: -10,
+    right: -10,
+    backgroundColor: 'red',
+    borderRadius: 12,
+    width: 24,
+    height: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
