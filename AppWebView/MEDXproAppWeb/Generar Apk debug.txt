@@ -1,0 +1,32 @@
+NOTA: Solo en caso de que le salga error cuando instalen el apk 
+generado en su celular.
+
+1. Generar el bundle de javaScript
+Ejecuta el siguiente comando en la raíz del proyecto:
+
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+
+Explicación:
+
+--platform android: Especifica Android.
+--dev false: Para producción (sin modo depuración).
+--entry-file index.js: Archivo de entrada.
+--bundle-output android/app/src/main/assets/index.android.bundle: Dónde guardar el bundle.
+--assets-dest android/app/src/main/res/: Dónde guardar las imágenes y otros recursos.
+
+Si la carpeta android/app/src/main/assets/ no existe, créala manualmente
+
+2. Volver a construir el Apk
+
+Recompila el Apk:
+cd android
+./gradlew assembleDebug
+
+o 
+
+cd android
+gradlew assembleDebug
+
+3. El APK generado estará en:
+
+android/app/build/outputs/apk/debug/app-debug.apk

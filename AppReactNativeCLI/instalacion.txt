@@ -1,0 +1,12 @@
+Link: https://reactnative.dev/docs/set-up-your-environment
+1. Link Choco: https://chocolatey.org/install
+2. choco install -y microsoft-openjdk17
+3. Descargar Android Studio
+4. Instalar Android Studio
+4.1. Next en todo
+4.2 Iniciar el AndroidStudio
+4.3 Next
+4.4 Standard -- Next
+4.5 Next
+4.6. Accept --> instalar
+5. 
