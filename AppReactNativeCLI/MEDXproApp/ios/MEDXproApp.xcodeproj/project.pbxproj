@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C80B921A6F3F58F76C31292 /* libPods-MEDXproApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-MEDXproApp.a */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CDF8E3E6070F42DC81FCCD1E /* LuxoraGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF85F29B4D4007AC43DDA3 /* LuxoraGrotesk-Bold.otf */; };
+		9CF351083EEE4F689C0BF6B7 /* LuxoraGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18D3FF6323F64D069E0E0197 /* LuxoraGrotesk-BoldItalic.otf */; };
+		E089A77AD7DD4052A84907B6 /* LuxoraGrotesk-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB42C977AE494FC8AB89C9B1 /* LuxoraGrotesk-Book.otf */; };
+		D6F55CFF538B4AC9B418BEED /* LuxoraGrotesk-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43ADAB721BB542C1B2185AC9 /* LuxoraGrotesk-BookItalic.otf */; };
+		25ECA5C96EEA47B083A290FF /* LuxoraGrotesk-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D42DC9A408A2489AB30B9AFC /* LuxoraGrotesk-Heavy.otf */; };
+		FD5BEBF8D5F54ED98C96178E /* LuxoraGrotesk-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F42B1EF74514C1DA3F4B66D /* LuxoraGrotesk-HeavyItalic.otf */; };
+		6B373A31F0064119BA2E9F65 /* LuxoraGrotesk-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C5A4FBF81D5443168023A386 /* LuxoraGrotesk-Italic.otf */; };
+		EBB5E0FC7B564FF69C9C0825 /* LuxoraGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5433F9E2BC24941A218EFDD /* LuxoraGrotesk-Light.otf */; };
+		C866D53DFEA84B87A97F823E /* LuxoraGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BCC0506D4F44D45949C9670 /* LuxoraGrotesk-LightItalic.otf */; };
+		EC94821320CA415F88C6641B /* LuxoraGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC55F3D9B7A4C62932FE59F /* LuxoraGrotesk-Medium.otf */; };
+		0998501EA26B478F8E81F09B /* LuxoraGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6311499277E546A7AE53EAA2 /* LuxoraGrotesk-MediumItalic.otf */; };
+		202151B4E7034237B0257781 /* LuxoraGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B08EEC6026CB408F89852BA1 /* LuxoraGrotesk-Regular.otf */; };
+		5A8ADFBE2D19404591DF0C77 /* LuxoraGrotesk-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA79AC0591A24E21942BF804 /* LuxoraGrotesk-Thin.otf */; };
+		D31D4998A78C4E148BF4C1E5 /* LuxoraGrotesk-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 72174115F978421FAF62B1F4 /* LuxoraGrotesk-ThinItalic.otf */; };
+		8F922EDD6DF341468AF7F508 /* Quando-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 945360879199481884A75675 /* Quando-Regular.ttf */; };
+		5FBE67F9B65E42EFAF374989 /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17151E9B227E4DF8BB2851CA /* WorkSans-Black.ttf */; };
+		5E1B7343EFED4B6883BED5A3 /* WorkSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E29324BCDA13450A9735DF71 /* WorkSans-BlackItalic.ttf */; };
+		0B4CD45929D442E193AF7BEE /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EBAEB55558444A78AEF12EA /* WorkSans-Bold.ttf */; };
+		5CDADF6495244A6092147088 /* WorkSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FC68159BD20455F83CC7B74 /* WorkSans-BoldItalic.ttf */; };
+		0334F0B8C96A46C9A780ABD9 /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBF00318EA8D478AB9F12B76 /* WorkSans-ExtraBold.ttf */; };
+		8F3FDB2EAD914F00B6B69C67 /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F75086214FB42868E269802 /* WorkSans-ExtraBoldItalic.ttf */; };
+		A461FC7B608E4CF2A4BDACB7 /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A779C83FADA948908D1407C4 /* WorkSans-ExtraLight.ttf */; };
+		3415B341DDEC4DF28C821787 /* WorkSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60BA27F084C74DCE909E839F /* WorkSans-ExtraLightItalic.ttf */; };
+		4C49C7C8C5924D23A7D81AB2 /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 977EF78F6E654E8185A99B09 /* WorkSans-Italic.ttf */; };
+		95D6A075B07944A5B2AB3F99 /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D9163AE3B4A4E50AF53CBDE /* WorkSans-Light.ttf */; };
+		78E931BDFB944A2DBF9B7063 /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB0E92F7D9BB4D25B73C5D76 /* WorkSans-LightItalic.ttf */; };
+		DFB2BC816B494BE4807369C8 /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7544EBA02AA748B08CEA3F2B /* WorkSans-Medium.ttf */; };
+		310ED7D8CFD948DFA5898F0E /* WorkSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35DB8B8C778F4F31B53BF0E0 /* WorkSans-MediumItalic.ttf */; };
+		4BABA84F1C64424BB23F3893 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B05841AE20C47FC80CE6581 /* WorkSans-Regular.ttf */; };
+		FDDEC79D547E4A03B792F831 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85BAA0A46A55495A95999064 /* WorkSans-SemiBold.ttf */; };
+		C06609E4D68448828DC735C2 /* WorkSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 643F1AE75C37403EB9226494 /* WorkSans-SemiBoldItalic.ttf */; };
+		F8CDBEC112DE4F179DB2C8DA /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 874899AB17D44728A37497E8 /* WorkSans-Thin.ttf */; };
+		ED46FF95A1BE4713BCE44E33 /* WorkSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D7E367CF34D618529F253 /* WorkSans-ThinItalic.ttf */; };
+		8F085D627E1A465781E3B4AC /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D01C9399BBD74946B824343A /* WorkSans-Italic-VariableFont_wght.ttf */; };
+		ECB1DA5A548A4409B567760D /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7EA3DE1CB244134ABED7219 /* WorkSans-VariableFont_wght.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = MEDXproApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* MEDXproApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEDXproApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MEDXproApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MEDXproApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = MEDXproApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-MEDXproApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDXproApp.debug.xcconfig"; path = "Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-MEDXproApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEDXproApp.release.xcconfig"; path = "Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp.release.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-MEDXproApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MEDXproApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MEDXproApp/AppDelegate.swift; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MEDXproApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		5EFF85F29B4D4007AC43DDA3 /* LuxoraGrotesk-Bold.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Bold.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		18D3FF6323F64D069E0E0197 /* LuxoraGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-BoldItalic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB42C977AE494FC8AB89C9B1 /* LuxoraGrotesk-Book.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Book.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Book.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43ADAB721BB542C1B2185AC9 /* LuxoraGrotesk-BookItalic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-BookItalic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-BookItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D42DC9A408A2489AB30B9AFC /* LuxoraGrotesk-Heavy.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Heavy.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F42B1EF74514C1DA3F4B66D /* LuxoraGrotesk-HeavyItalic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-HeavyItalic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C5A4FBF81D5443168023A386 /* LuxoraGrotesk-Italic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Italic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B5433F9E2BC24941A218EFDD /* LuxoraGrotesk-Light.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Light.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9BCC0506D4F44D45949C9670 /* LuxoraGrotesk-LightItalic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-LightItalic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7AC55F3D9B7A4C62932FE59F /* LuxoraGrotesk-Medium.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Medium.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6311499277E546A7AE53EAA2 /* LuxoraGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-MediumItalic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B08EEC6026CB408F89852BA1 /* LuxoraGrotesk-Regular.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Regular.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DA79AC0591A24E21942BF804 /* LuxoraGrotesk-Thin.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-Thin.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72174115F978421FAF62B1F4 /* LuxoraGrotesk-ThinItalic.otf */ = {isa = PBXFileReference; name = "LuxoraGrotesk-ThinItalic.otf"; path = "../src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		945360879199481884A75675 /* Quando-Regular.ttf */ = {isa = PBXFileReference; name = "Quando-Regular.ttf"; path = "../src/assets/fonts/Quando/Quando-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17151E9B227E4DF8BB2851CA /* WorkSans-Black.ttf */ = {isa = PBXFileReference; name = "WorkSans-Black.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E29324BCDA13450A9735DF71 /* WorkSans-BlackItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-BlackItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7EBAEB55558444A78AEF12EA /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; name = "WorkSans-Bold.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6FC68159BD20455F83CC7B74 /* WorkSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-BoldItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CBF00318EA8D478AB9F12B76 /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "WorkSans-ExtraBold.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F75086214FB42868E269802 /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A779C83FADA948908D1407C4 /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; name = "WorkSans-ExtraLight.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		60BA27F084C74DCE909E839F /* WorkSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		977EF78F6E654E8185A99B09 /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; name = "WorkSans-Italic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1D9163AE3B4A4E50AF53CBDE /* WorkSans-Light.ttf */ = {isa = PBXFileReference; name = "WorkSans-Light.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EB0E92F7D9BB4D25B73C5D76 /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-LightItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7544EBA02AA748B08CEA3F2B /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; name = "WorkSans-Medium.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35DB8B8C778F4F31B53BF0E0 /* WorkSans-MediumItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-MediumItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B05841AE20C47FC80CE6581 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; name = "WorkSans-Regular.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85BAA0A46A55495A95999064 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; name = "WorkSans-SemiBold.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		643F1AE75C37403EB9226494 /* WorkSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		874899AB17D44728A37497E8 /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; name = "WorkSans-Thin.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C6D7E367CF34D618529F253 /* WorkSans-ThinItalic.ttf */ = {isa = PBXFileReference; name = "WorkSans-ThinItalic.ttf"; path = "../src/assets/fonts/Work_Sans/static/WorkSans-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D01C9399BBD74946B824343A /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "WorkSans-Italic-VariableFont_wght.ttf"; path = "../src/assets/fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A7EA3DE1CB244134ABED7219 /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "WorkSans-VariableFont_wght.ttf"; path = "../src/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-MEDXproApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* MEDXproApp */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+			);
+			name = MEDXproApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-MEDXproApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* MEDXproApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				91520194F81D48A9915041B3 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* MEDXproApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-MEDXproApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-MEDXproApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91520194F81D48A9915041B3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				5EFF85F29B4D4007AC43DDA3 /* LuxoraGrotesk-Bold.otf */,
+				18D3FF6323F64D069E0E0197 /* LuxoraGrotesk-BoldItalic.otf */,
+				CB42C977AE494FC8AB89C9B1 /* LuxoraGrotesk-Book.otf */,
+				43ADAB721BB542C1B2185AC9 /* LuxoraGrotesk-BookItalic.otf */,
+				D42DC9A408A2489AB30B9AFC /* LuxoraGrotesk-Heavy.otf */,
+				4F42B1EF74514C1DA3F4B66D /* LuxoraGrotesk-HeavyItalic.otf */,
+				C5A4FBF81D5443168023A386 /* LuxoraGrotesk-Italic.otf */,
+				B5433F9E2BC24941A218EFDD /* LuxoraGrotesk-Light.otf */,
+				9BCC0506D4F44D45949C9670 /* LuxoraGrotesk-LightItalic.otf */,
+				7AC55F3D9B7A4C62932FE59F /* LuxoraGrotesk-Medium.otf */,
+				6311499277E546A7AE53EAA2 /* LuxoraGrotesk-MediumItalic.otf */,
+				B08EEC6026CB408F89852BA1 /* LuxoraGrotesk-Regular.otf */,
+				DA79AC0591A24E21942BF804 /* LuxoraGrotesk-Thin.otf */,
+				72174115F978421FAF62B1F4 /* LuxoraGrotesk-ThinItalic.otf */,
+				945360879199481884A75675 /* Quando-Regular.ttf */,
+				17151E9B227E4DF8BB2851CA /* WorkSans-Black.ttf */,
+				E29324BCDA13450A9735DF71 /* WorkSans-BlackItalic.ttf */,
+				7EBAEB55558444A78AEF12EA /* WorkSans-Bold.ttf */,
+				6FC68159BD20455F83CC7B74 /* WorkSans-BoldItalic.ttf */,
+				CBF00318EA8D478AB9F12B76 /* WorkSans-ExtraBold.ttf */,
+				6F75086214FB42868E269802 /* WorkSans-ExtraBoldItalic.ttf */,
+				A779C83FADA948908D1407C4 /* WorkSans-ExtraLight.ttf */,
+				60BA27F084C74DCE909E839F /* WorkSans-ExtraLightItalic.ttf */,
+				977EF78F6E654E8185A99B09 /* WorkSans-Italic.ttf */,
+				1D9163AE3B4A4E50AF53CBDE /* WorkSans-Light.ttf */,
+				EB0E92F7D9BB4D25B73C5D76 /* WorkSans-LightItalic.ttf */,
+				7544EBA02AA748B08CEA3F2B /* WorkSans-Medium.ttf */,
+				35DB8B8C778F4F31B53BF0E0 /* WorkSans-MediumItalic.ttf */,
+				2B05841AE20C47FC80CE6581 /* WorkSans-Regular.ttf */,
+				85BAA0A46A55495A95999064 /* WorkSans-SemiBold.ttf */,
+				643F1AE75C37403EB9226494 /* WorkSans-SemiBoldItalic.ttf */,
+				874899AB17D44728A37497E8 /* WorkSans-Thin.ttf */,
+				5C6D7E367CF34D618529F253 /* WorkSans-ThinItalic.ttf */,
+				D01C9399BBD74946B824343A /* WorkSans-Italic-VariableFont_wght.ttf */,
+				A7EA3DE1CB244134ABED7219 /* WorkSans-VariableFont_wght.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* MEDXproApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MEDXproApp" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEDXproApp;
+			productName = MEDXproApp;
+			productReference = 13B07F961A680F5B00A75B9A /* MEDXproApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MEDXproApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* MEDXproApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CDF8E3E6070F42DC81FCCD1E /* LuxoraGrotesk-Bold.otf in Resources */,
+				9CF351083EEE4F689C0BF6B7 /* LuxoraGrotesk-BoldItalic.otf in Resources */,
+				E089A77AD7DD4052A84907B6 /* LuxoraGrotesk-Book.otf in Resources */,
+				D6F55CFF538B4AC9B418BEED /* LuxoraGrotesk-BookItalic.otf in Resources */,
+				25ECA5C96EEA47B083A290FF /* LuxoraGrotesk-Heavy.otf in Resources */,
+				FD5BEBF8D5F54ED98C96178E /* LuxoraGrotesk-HeavyItalic.otf in Resources */,
+				6B373A31F0064119BA2E9F65 /* LuxoraGrotesk-Italic.otf in Resources */,
+				EBB5E0FC7B564FF69C9C0825 /* LuxoraGrotesk-Light.otf in Resources */,
+				C866D53DFEA84B87A97F823E /* LuxoraGrotesk-LightItalic.otf in Resources */,
+				EC94821320CA415F88C6641B /* LuxoraGrotesk-Medium.otf in Resources */,
+				0998501EA26B478F8E81F09B /* LuxoraGrotesk-MediumItalic.otf in Resources */,
+				202151B4E7034237B0257781 /* LuxoraGrotesk-Regular.otf in Resources */,
+				5A8ADFBE2D19404591DF0C77 /* LuxoraGrotesk-Thin.otf in Resources */,
+				D31D4998A78C4E148BF4C1E5 /* LuxoraGrotesk-ThinItalic.otf in Resources */,
+				8F922EDD6DF341468AF7F508 /* Quando-Regular.ttf in Resources */,
+				5FBE67F9B65E42EFAF374989 /* WorkSans-Black.ttf in Resources */,
+				5E1B7343EFED4B6883BED5A3 /* WorkSans-BlackItalic.ttf in Resources */,
+				0B4CD45929D442E193AF7BEE /* WorkSans-Bold.ttf in Resources */,
+				5CDADF6495244A6092147088 /* WorkSans-BoldItalic.ttf in Resources */,
+				0334F0B8C96A46C9A780ABD9 /* WorkSans-ExtraBold.ttf in Resources */,
+				8F3FDB2EAD914F00B6B69C67 /* WorkSans-ExtraBoldItalic.ttf in Resources */,
+				A461FC7B608E4CF2A4BDACB7 /* WorkSans-ExtraLight.ttf in Resources */,
+				3415B341DDEC4DF28C821787 /* WorkSans-ExtraLightItalic.ttf in Resources */,
+				4C49C7C8C5924D23A7D81AB2 /* WorkSans-Italic.ttf in Resources */,
+				95D6A075B07944A5B2AB3F99 /* WorkSans-Light.ttf in Resources */,
+				78E931BDFB944A2DBF9B7063 /* WorkSans-LightItalic.ttf in Resources */,
+				DFB2BC816B494BE4807369C8 /* WorkSans-Medium.ttf in Resources */,
+				310ED7D8CFD948DFA5898F0E /* WorkSans-MediumItalic.ttf in Resources */,
+				4BABA84F1C64424BB23F3893 /* WorkSans-Regular.ttf in Resources */,
+				FDDEC79D547E4A03B792F831 /* WorkSans-SemiBold.ttf in Resources */,
+				C06609E4D68448828DC735C2 /* WorkSans-SemiBoldItalic.ttf in Resources */,
+				F8CDBEC112DE4F179DB2C8DA /* WorkSans-Thin.ttf in Resources */,
+				ED46FF95A1BE4713BCE44E33 /* WorkSans-ThinItalic.ttf in Resources */,
+				8F085D627E1A465781E3B4AC /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
+				ECB1DA5A548A4409B567760D /* WorkSans-VariableFont_wght.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MEDXproApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEDXproApp/Pods-MEDXproApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* MEDXproApp */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-MEDXproApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MEDXproApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MEDXproApp;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-MEDXproApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = MEDXproApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MEDXproApp;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MEDXproApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MEDXproApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

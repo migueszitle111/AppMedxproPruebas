@@ -1,0 +1,145 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Bold.otf",
+      "sha1": "fda1ac7e480305e26feb0dbb6ab59bb92a245090"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-BoldItalic.otf",
+      "sha1": "759ee528e17118957d6860d1572b2a314871152a"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Book.otf",
+      "sha1": "0c2185b7dcfdd8ee58b647508d56e18f9e3a5724"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-BookItalic.otf",
+      "sha1": "a5ab3ecdc3cd376efb5c841b7aaec9b9857a81e6"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Heavy.otf",
+      "sha1": "918f53c30120c86be77c196be5eee02c3db4b08f"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-HeavyItalic.otf",
+      "sha1": "5d6fa3c5a555c15de57cb3243a476d39286016c4"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Italic.otf",
+      "sha1": "b16a19aab349f5cb59ea83f1f69b19852908e25a"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Light.otf",
+      "sha1": "2524303fd49747c921c46f862f23ea4a497d0f41"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-LightItalic.otf",
+      "sha1": "50d1160647d087b79610b4c3e1d4fc69e82710e4"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Medium.otf",
+      "sha1": "2cb77b05f5c9cffacf2cf0f7147558d16ef3934a"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-MediumItalic.otf",
+      "sha1": "4f305f2bd59ab9885725a7c8b006c6c86cea4647"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Regular.otf",
+      "sha1": "2f88a5b9bec52298a33d37029ee715426314e868"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-Thin.otf",
+      "sha1": "9dff4e93d95db4d845c9f88e862369262dd62d5d"
+    },
+    {
+      "path": "src/assets/fonts/Luxora_Grotesk/LuxoraGrotesk-ThinItalic.otf",
+      "sha1": "889d6aa17a512dc5bdf9041d1d987348664c4f42"
+    },
+    {
+      "path": "src/assets/fonts/Quando/Quando-Regular.ttf",
+      "sha1": "391fede60034b525c088c4d6d4c1e0669f21e7af"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Black.ttf",
+      "sha1": "be8c9b36d59743f1cc175ba646bb7f8cbeff0911"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-BlackItalic.ttf",
+      "sha1": "8032913aa342e2f131b1884296be0d73c967b873"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Bold.ttf",
+      "sha1": "098c2420f59811d626752fbdf521a5c5ded2068f"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-BoldItalic.ttf",
+      "sha1": "03c46e20da465b4c513a1fd1d946bfe9914e04d5"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-ExtraBold.ttf",
+      "sha1": "a6321202c27d083c5726b825b2306975d658a7a6"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-ExtraBoldItalic.ttf",
+      "sha1": "ae0ede9ede0d46261460d2fb43cac276639a1e72"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-ExtraLight.ttf",
+      "sha1": "aac00134a901f3d64ac0d58c36b02f708e1e0916"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-ExtraLightItalic.ttf",
+      "sha1": "3c8343d774cda016e32281a55a31f97a234d4cc9"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Italic.ttf",
+      "sha1": "5022fca7085507198469fc9570afbbc01fbe7f40"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Light.ttf",
+      "sha1": "7dd10eeeb0023b0ea356708f93933a7f0ca74af9"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-LightItalic.ttf",
+      "sha1": "4f35bc4d6cccc25a816e7b09e11a620380158ce2"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Medium.ttf",
+      "sha1": "1ed172f57ad9f44be4c8ba2bcf473bea288c9a07"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-MediumItalic.ttf",
+      "sha1": "f4cc5e18b5b6cdfe6602cf9a3be2707576af9afe"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Regular.ttf",
+      "sha1": "3a5bd698d50be4d188c32c51a742e0d06facd697"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-SemiBold.ttf",
+      "sha1": "3878cedb63f36df35a663493b0d766991746b2b1"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-SemiBoldItalic.ttf",
+      "sha1": "beb599acdfc00b86d1148b67c26a6626fce0c0ef"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-Thin.ttf",
+      "sha1": "455ed2047c1450ec4384bd3b8ce0726431a3461c"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/static/WorkSans-ThinItalic.ttf",
+      "sha1": "f58e225e1262b78ba2d3718684c994c514f0fe4a"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf",
+      "sha1": "beffa7990115f107bf7ef9c0b9524787af41de8f"
+    },
+    {
+      "path": "src/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf",
+      "sha1": "335643b6a59aaf37bd18160a369ef398e40980b6"
+    }
+  ]
+}

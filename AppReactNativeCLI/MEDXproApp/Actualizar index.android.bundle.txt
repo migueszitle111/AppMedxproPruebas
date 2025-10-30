@@ -1,0 +1,38 @@
+//GENERAR EL APK//
+Nota: Revisa si tienes el index.android.bundle 
+en android/app/src/main/assets/index.android.bundle,
+borralo y sigue los pasos 1, 2, 3.
+
+1. cd android
+./gradlew clean
+cd ..
+
+2. npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+3. cd android
+./gradlew assembleDebug
+
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+Borra la app del celular.
+
+Haz limpieza:
+
+bash
+Copiar
+Editar
+cd android
+./gradlew clean
+cd ..
+(Opcional pero útil):
+
+bash
+Copiar
+Editar
+npx react-native start --reset-cache
+Instala la app nuevamente:
+
+bash
+Copiar
+Editar
+npx react-native run-android

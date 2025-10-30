@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DFlip / RN (control directo)</title>
+
+  <link href="./css/dflip.min.css" rel="stylesheet" type="text/css" />
+  <link href="./css/themify-icons.min.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    html, body { height:100%; margin:0; background:#000; }
+    #wrap { position:fixed; inset:0; background:#000; overflow:hidden; }
+    /* El contenedor donde creamos el flipbook por código */
+    #flipbookPDFContainer { position:absolute; inset:0; }
+    /* Quita portadas/sombras si te molestan */
+    .df-hard, .df-hardcover, .df-cover, .df-page.df-cover, .df-static-cover, .df-book-shadow {
+      display: none !important;
+    }
+    /* Centramos horizontalmente el libro (DearFlip genera .df-book-wrap) */
+    #flipbookPDFContainer .df-book-wrap { margin-left:auto; margin-right:auto; }
+
+      /* 🔪 Mata TODAS las sombras/gradientes internos al hojear */
+#flipbookPDFContainer .df-book-shadow,
+#flipbookPDFContainer .df-page-shadow,
+#flipbookPDFContainer .df-sheet-shadow,
+#flipbookPDFContainer .df-fold-gradient,
+#flipbookPDFContainer .df-shadow,
+#flipbookPDFContainer .df-gradient,
+#flipbookPDFContainer [class*="shadow"],
+#flipbookPDFContainer [class*="gradient"] {
+  display: none !important;
+  opacity: 0 !important;
+  filter: none !important;
+}
+
+/* Quita sombras/velos que vengan en pseudo-elementos */
+#flipbookPDFContainer .df-sheet:before,
+#flipbookPDFContainer .df-sheet:after,
+#flipbookPDFContainer .df-page:before,
+#flipbookPDFContainer .df-page:after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Por si alguna sombra está en estilos inline */
+#flipbookPDFContainer .df-page,
+#flipbookPDFContainer .df-sheet,
+#flipbookPDFContainer canvas {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Quitar la sombra del centro/columna vertebral en 2D */
+#flipbookPDFContainer .df-page-front:before,
+#flipbookPDFContainer .df-page-back:before {
+  opacity: 0 !important;}
+
+
+  /* Evita re-paints agresivos durante transformaciones 2D */
+#flipbookPDFContainer .df-sheet,
+#flipbookPDFContainer .df-page,
+#flipbookPDFContainer canvas {
+  backface-visibility: hidden !important;
+  transform: translateZ(0);            /* fuerza layer de composición */
+  will-change: transform;              /* pista al compositor */
+}
+
+/* A veces el wrapper también necesita layer propio */
+#flipbookPDFContainer .df-book-wrap {
+  transform: translateZ(0);
+}
+
+
+  </style>
+
+  <script>
+    // Configuración antes de DearFlip
+    window.DFLIP = window.DFLIP || {};
+    window.DFLIP.defaults = {
+      autoCreate: false,   // 👈 DESACTIVADO: creamos nosotros
+      skin: 'black',
+      webgl: false,
+      hard: false,
+      backgroundColor: '#000000',
+      pdfRenderQuality: 2,
+      zoomRatio: 3
+    };
+  </script>
+
+  
+</head>
+<body>
+  <div id="wrap">
+    <div id="flipbookPDFContainer"></div>
+  </div>
+
+  <!-- jQuery y DearFlip -->
+  <script src="./js/libs/jquery.min.js"></script>
+  <script src="./js/dflip.min.js"></script>
+
+  <script>
+    (function () {
+      let _flip = null;
+
+      function centerBook() {
+        const wrapEl = document.getElementById('wrap');
+        const bookWrap = document.querySelector('#flipbookPDFContainer .df-book-wrap:last-of-type') ||
+                         document.querySelector('#flipbookPDFContainer .df-book-wrap');
+        const ui = document.querySelector('#flipbookPDFContainer .df-ui');
+        if (!wrapEl || !bookWrap) return;
+        const available = wrapEl.clientHeight - (ui ? ui.offsetHeight : 0);
+        const bookH = bookWrap.offsetHeight || 0;
+        const topMargin = Math.max(0, Math.floor((available - bookH) / 2));
+        bookWrap.style.marginTop = topMargin + 'px';
+      }
+      function debounce(fn, ms){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn.apply(null,a), ms); }; }
+
+      function scheduleCentering() {
+  const safeCenter = debounce(centerBook, 80);
+
+  // Solo en eventos de ventana (no observes el DOM del libro en vivo)
+  window.addEventListener('resize', safeCenter);
+  window.addEventListener('orientationchange', safeCenter);
+
+  // centrado inicial en unos ticks
+  setTimeout(safeCenter, 300);
+  setTimeout(safeCenter, 800);
+  setTimeout(safeCenter, 1500);
+}
+
+      // 🔧 Crea o reemplaza el flipbook con el PDF indicado
+      function setPdf(pdfUrl) {
+        try {
+          if (_flip && typeof _flip.destroy === 'function') {
+            _flip.destroy(); // si la versión lo soporta
+          }
+        } catch (e) {}
+        // Limpia el contenedor por si quedaron restos
+        const c = document.getElementById('flipbookPDFContainer');
+        if (c) c.innerHTML = '';
+
+        // Opciones (además de defaults)
+        const options = {
+          webgl: false,
+          backgroundColor: '#000000'
+          // height: 500 // no pongas height para auto-height
+        };
+
+        // 👉 API jQuery (documentación “Using HTML and JavaScript”):
+        //    $("#flipbookPDFContainer").flipBook(source_pdf, option_pdf);
+        _flip = jQuery("#flipbookPDFContainer").flipBook(pdfUrl, options);
+
+        try {
+  // Algunos builds exponen eventos; si no existen, no pasa nada
+  if (_flip && _flip.on) {
+    _flip.on('flipEnd', () => setTimeout(centerBook, 60));
+  }
+} catch(e){}
+
+
+        // Centrado en siguientes ticks
+        setTimeout(centerBook, 300);
+        setTimeout(centerBook, 800);
+      }
+
+      // Exponer función global para RN
+      window.__setPdf = setPdf;
+
+      // Si te mandan ?pdf= en la URL, cargarlo también (opcional)
+      try {
+        const qs = new URLSearchParams(location.search);
+        const qpdf = qs.get('pdf');
+        if (qpdf) setPdf(qpdf);
+      } catch {}
+
+      // Logs hacia RN (opcional)
+      function logToRN(type, ...args){
+        if(window.ReactNativeWebView){
+          try { window.ReactNativeWebView.postMessage(JSON.stringify({type, args})); } catch(_) {}
+        }
+      }
+      window.addEventListener('error', ev => logToRN('error', 'Flip HTML error', ev && ev.message || ev));
+      logToRN('log', 'Flip HTML listo');
+
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        scheduleCentering();
+      } else {
+        document.addEventListener('DOMContentLoaded', scheduleCentering);
+      }
+    })();
+  </script>
+</body>
+</html>
